@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from './Header'
+import Welcome from './Welcome'
 import './style.css'
 
 class App extends Component {
@@ -7,6 +8,7 @@ class App extends Component {
     return (
       <div className='app-wrapper'>
         <Header />
+        <Welcome />
       </div>
     )
   }
