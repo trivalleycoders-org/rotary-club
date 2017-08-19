@@ -5,7 +5,7 @@ CSS-Modules makes all CSS selectors local to the component. This is seen as an a
 ## How to write selectors with CSS-Modules
 - Each component will have its own style.css file
 - The component will import the file
-````
+````javascript
 import styles from './style.css'
 ````
 - All styles for the component are written in the components style.css file
@@ -15,7 +15,7 @@ import styles from './style.css'
 - CSS properties are written as normal
 - Pseudo-classes work are are written the same if they don't contain a hypyen. I have not tried a pseudo class with hyphenated name yet but I suspect it will need to be in camelCase
 - Here is a example
-````
+````css
 .menuItem:hover {
   border-color: #22C365;
   box-shadow: 0 0 0 8px rgba(34, 195, 101, 0.1);
