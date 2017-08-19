@@ -81,5 +81,6 @@ With CSS-Modules would can still do this but applying two or more styles to the 
   background-color: white;
 }
 ````
+**_And these examples are likely candidates for global styles unless you had a 'callout' component which I do have in my new blog._**
 ## More
 I'm sure there is more to it but that is all I know for now
