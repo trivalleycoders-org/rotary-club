@@ -32,5 +32,54 @@ import styles from './style.css'
 </div>
 ````
 
+### One Key Difference
+With traditional CSS you might do something below where .callout is the base style and .callout-danger & .callout-warning build on top of it.
+````css
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #999999;
+}
+.callout-danger {
+  border-left-color: #ce4844;
+  background-color: white;
+}
+.callout-warning {
+  border-left-color: #ffe202;
+  background-color: white;
+}
+````
+With CSS-Modules would can still do this but applying two or more styles to the same element requires the use of the 'classnames' package which removes the savings the above tries to achieve. The way to make these styles with CSS-Modules is:
+````css
+.callout-default {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #999999;
+}
+.callout-danger {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #ce4844;
+  background-color: white;
+}
+.callout-warning {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  border-left-color: #ffe202;
+  background-color: white;
+}
+````
 ## More
 I'm sure there is more to it but that is all I know for now
