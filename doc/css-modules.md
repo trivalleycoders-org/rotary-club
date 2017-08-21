@@ -2,6 +2,8 @@
 
 CSS-Modules makes all CSS selectors local to the component. This is seen as an advantage as it avoids conflicts between selectors. However, it does seem to mean you will write more lines of CSS but with less frustration. There is a syntax to make a selector global but I have not learned to do so yet.
 
+## Note: bootstrap styles are excluded from CSS-Modues and are global
+
 ## How to write selectors with CSS-Modules
 - Each component will have its own style.css file
 - The component will import the file

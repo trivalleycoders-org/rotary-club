@@ -50,7 +50,9 @@ class TopBarPhone extends Component {
             </div>
           </div>
           <div className={styles.mobileMenuDiv} onClick={() => handleHamburgerClick()}>
-            <img className={styles.hamburger} src={iHamburger} />
+            {/* <img className={styles.hamburger} src={iHamburger} /> */}
+            <div className="glyphicon glyphicon-menu-hamburger hamburger" aria-hidden="true">
+            </div>
           </div>
         </div>
         <div className={mobileMenu}>
