@@ -1,6 +1,9 @@
 // TopBarPhone
 import React, { Component } from 'react'
 import classNames from 'classnames'
+import styles from './style.css'
+import iHamburger from './hamburger.png'
+import MobileMenuItem from '../../../../elements/MobileMenuItem'
 
 class TopBarPhone extends Component {
   constructor(props) {
@@ -11,12 +14,10 @@ class TopBarPhone extends Component {
   }
 
   render() {
-
     const { brandName, brandColor, logo } = this.props.brand
-    // const { menuItems } = this.props.menuItems
     const mobileMenu = classNames({
-      'hide-mobile-menu': !this.state.showMobileMenu,
-      'show-mobile-menu': this.state.showMobileMenu,
+      [styles.hideMobileMenu]: !this.state.showMobileMenu,
+      [styles.showMobileMenu]: this.state.showMobileMenu,
     })
 
     const handleHamburgerClick = () => {
@@ -28,7 +29,10 @@ class TopBarPhone extends Component {
     }
 
     const renderMenuItems = this.props.menuItems.map((m) => (
-      <a href={m.href} key={m.label} className='menu-item phone-menu-item'>{m.label}</a>
+      <MobileMenuItem
+        key={m.label}
+        href={m.href}
+        label={m.label} />
     ))
 
     const configStyles = {
@@ -37,13 +41,16 @@ class TopBarPhone extends Component {
     }
 
     return (
-      <div>
-        <div className='top-bar'>
-          <div className='branding-phone'>
-            <img className='tvc-logo img-responsive' src={logo} alt='tvc-logo' />
-            <div className='brand brand-phone' style={configStyles}>{brandName}</div>
+
+      <div className={styles.topBar}>
+        <div className={styles.firstRow}>
+          <div className={styles.brand}>
+            <img className={styles.tvcLogo} src={logo} alt='tvc-logo' />
+            <div className={styles.brand} style={configStyles}>{brandName}
+            </div>
           </div>
-          <div className='mobile-menu-div' onClick={() => handleHamburgerClick()}>
+          <div className={styles.mobileMenuDiv} onClick={() => handleHamburgerClick()}>
+            {/* <img className={styles.hamburger} src={iHamburger} /> */}
             <div className="glyphicon glyphicon-menu-hamburger hamburger" aria-hidden="true">
             </div>
           </div>
@@ -52,7 +59,6 @@ class TopBarPhone extends Component {
           {renderMenuItems}
         </div>
       </div>
-
     )
   }
 }
