@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
-import Header from './Header'
-import Welcome from './Welcome'
-import './style.css'
+import ScheduleList from './ScheduleList'
+import styles from './style.css'
 import TopBar from './TopBar'
 
 class App extends Component {
   render () {
     return (
-      <div className='app-wrapper'>
+      <div className={styles.appWrapper}>
         <TopBar />
-        <Header />
-        <Welcome />
+        <ScheduleList />
       </div>
     )
   }
