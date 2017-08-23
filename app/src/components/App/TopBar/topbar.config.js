@@ -1,7 +1,7 @@
-import iLogo from './tvc.new.03.svg'
+//import iLogo from './tvc.new.03.svg'
 
 export const brand = {
-  logo: iLogo,
+  //logo: iLogo,
   brandName: 'Job Tracker',
   brandColor: '#34E97C',
   brandSizePhone: '5vw',

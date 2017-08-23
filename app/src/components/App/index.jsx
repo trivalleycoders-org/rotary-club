@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ScheduleList from './ScheduleList'
+import EditList from './EditList'
 import styles from './style.css'
 import TopBar from './TopBar'
 
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className={styles.appWrapper}>
         <TopBar />
-        <ScheduleList />
+        <EditList />
       </div>
     )
   }
