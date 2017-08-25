@@ -1,8 +1,8 @@
-import iLogo from './tvc.new.03.svg'
+//import iLogo from './tvc.new.03.svg'
 
 export const brand = {
-  logo: iLogo,
-  brandName: 'Tri-Valley Coders',
+  //logo: iLogo,
+  brandName: 'Job Tracker',
   brandColor: '#34E97C',
   brandSizePhone: '5vw',
   brandSizeDesktop: '3.2vw',
@@ -10,20 +10,20 @@ export const brand = {
 
 export const menuItems = [
   {
-    label: 'Learn',
-    href: '#learn'
-  },
-  {
-    label: 'Events',
-    href: '#events',
+    label: 'Schedule',
+    href: '#schedule'
   },
   {
     label: 'Members',
     href: '#members',
   },
   {
-    label: 'Sponsors',
-    href: '#sponsors',
+    label: 'Log In',
+    href: '#logIn',
+  },
+  {
+    label: 'Log Out',
+    href: '#logOut',
   }
 ]
 
