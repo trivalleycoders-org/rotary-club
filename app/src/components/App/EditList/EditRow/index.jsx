@@ -9,6 +9,7 @@ const EditRow = () => (
         <tr>
           <th>Task</th>
           <th>Volunteer</th>
+          <th>Comments</th>
         </tr>
       </thead>
       <tbody>
