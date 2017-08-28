@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import './style.css' 
 
 const EditVolunteer = () => (
-  <div id='editVolunteer' className='editVolunteer' >
+  <div className='editVolunteer' id='editVolunteer'  >
     <Button id='save'>Save</Button>
     <h1 className='name'>James Cameron</h1>
     

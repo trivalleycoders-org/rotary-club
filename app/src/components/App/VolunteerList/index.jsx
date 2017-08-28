@@ -3,7 +3,7 @@ import VolunteerRow from './VolunteerRow'
 import './style.css'
 
 const VolunteerList = () => (
-  <div className='volunteerList' id='volunteerList'>
+  <div id='volunteerList' className='volunteerList'>
     <h1 className='title'>Volunteer List</h1>
 
     <button id='editVolunteerBtn'>Edit</button>

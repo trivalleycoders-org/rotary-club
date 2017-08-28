@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap'
 import './style.css'
 
 const ScheduleRow = () => (
-  <div className='scheduleRow' id='scheduleRow'>
+  <div id='scheduleRow' className='scheduleRow'>
     <Table striped condensed hover>
       <thead>
         <tr>

@@ -4,7 +4,7 @@ import './style.css'
  {/* Welcome message will switch to current schedule upon log in */} 
 
 const Welcome = () => (
-  <div className='welcome' id='welcome'>
+  <div id='welcome' className='welcome'>
     <h1 className='welcome-message'>
       Please log in to view current volunteer schedule.
     </h1>

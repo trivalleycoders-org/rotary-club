@@ -3,7 +3,7 @@ import { Table, FormControl } from 'react-bootstrap'
 import './style.css'
 
 const EditRow = () => (
-  <div className='scheduleRow' id='scheduleRow'>
+  <div id='scheduleRow' className='scheduleRow'>
     <Table striped condensed hover>
       <thead>
         <tr>

@@ -6,7 +6,7 @@ import './style.css'
 {/* save button should bring back ScheduleList component */}
 
 const EditList = () => (
-  <div className='editList' id='editList'>
+  <div id='editList' className='editList'>
     <Button id='save'>Save</Button>
     <h1 className='title'>Volunteer Schedule for</h1>
     <form>
