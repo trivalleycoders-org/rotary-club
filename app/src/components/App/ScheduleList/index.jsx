@@ -1,13 +1,13 @@
 import React from 'react'
 import ScheduleRow from './ScheduleRow'
-import './style.css'
+import styles from './style.css'
 
 {/* edit button should only appear when admin is logged in */}
 
 const ScheduleList = () => (
-  <div id='schedule' className='schedule'>
+  <div id='schedule' className={styles.schedule}>
     <button id='editScheduleBtn'>Edit</button>
-    <h1 className='title'>Volunteer Schedule for [date] </h1>
+    <h1 className={styles.title}>Volunteer Schedule for [date] </h1>
     <ScheduleRow />
   </div>    
 )

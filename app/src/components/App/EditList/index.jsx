@@ -1,12 +1,12 @@
 import React from 'react'
 import EditRow from './EditRow'
 import { FormControl, Button } from 'react-bootstrap'
-import './style.css' 
+import styles from './style.css' 
 
 {/* save button should bring back ScheduleList component */}
 
 const EditList = () => (
-  <div id='editList' className='editList'>
+  <div id='editList' className={styles.editList}>
     <Button id='save'>Save</Button>
     <h1 className='title'>Volunteer Schedule for</h1>
     <form>

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-import './style.css' 
+import styles from './style.css' 
 
 const EditVolunteer = () => (
-  <div className='editVolunteer' id='editVolunteer'  >
+  <div className='editVolunteer' id={styles.editVolunteer}  >
     <Button id='save'>Save</Button>
     <h1 className='name'>James Cameron</h1>
     

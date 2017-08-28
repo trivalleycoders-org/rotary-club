@@ -1,9 +1,9 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
-import './style.css'
+import styles from './style.css'
 
 const ScheduleRow = () => (
-  <div id='scheduleRow' className='scheduleRow'>
+  <div id='scheduleRow' className={styles.scheduleRow}>
     <Table striped condensed hover>
       <thead>
         <tr>

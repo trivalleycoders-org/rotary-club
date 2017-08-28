@@ -1,9 +1,9 @@
 import React from 'react'
 import { Table, FormControl } from 'react-bootstrap'
-import './style.css'
+import styles from './style.css'
 
 const EditRow = () => (
-  <div id='scheduleRow' className='scheduleRow'>
+  <div id='scheduleRow' className={styles.scheduleRow}>
     <Table striped condensed hover>
       <thead>
         <tr>
