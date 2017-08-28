@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import EditList from './EditList'
-//import VolunteerList from './VolunteerList'
+//import EditList from './EditList'
+import VolunteerList from './VolunteerList'
 //import EditVolunteer from './EditVolunteer'
 // import ScheduleList from './ScheduleList'
 import styles from './style.css'
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className={styles.appWrapper}>
         <TopBar />
-        <EditList />
+        <VolunteerList />
       </div>
     )
   }

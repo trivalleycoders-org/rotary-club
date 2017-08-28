@@ -6,9 +6,6 @@ const VolunteerList = () => {
   return (
     <div id='volunteerList' className={styles.volunteerList}>
       <h1 className={styles.title}>Volunteer List</h1>
-
-      <button id='editVolunteerBtn'>Edit</button>
-      
       <VolunteerRow />
     </div>    
   )

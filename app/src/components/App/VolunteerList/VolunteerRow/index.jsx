@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from 'react-bootstrap'
+import { Table, Button } from 'react-bootstrap'
 import styles from './style.css'
 
 const VolunteerRow = () => {
@@ -8,6 +8,7 @@ const VolunteerRow = () => {
       <Table striped condensed hover>
         <thead>
           <tr>
+            <th></th>
             <th>Name</th>
             <th>Email</th>
             <th>Text</th>
@@ -16,6 +17,7 @@ const VolunteerRow = () => {
         </thead>
         <tbody>
           <tr>
+            <td><Button>Edit</Button></td>
             <td>James Cameron</td>
             <td>jcameron@gmail.com</td>
             <td>310-555-555</td>
