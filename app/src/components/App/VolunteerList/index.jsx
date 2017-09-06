@@ -1,15 +1,14 @@
 import React from 'react'
 import VolunteerRow from './VolunteerRow'
-import './style.css'
+import styles from './style.css'
 
-const VolunteerList = () => (
-  <div className='volunteerList' id='volunteerList'>
-    <h1 className='title'>Volunteer List</h1>
-
-    <button id='editVolunteerBtn'>Edit</button>
-    
-    <VolunteerRow />
-  </div>    
-)
+const VolunteerList = () => {
+  return (
+    <div id='volunteerList' className={styles.volunteerList}>
+      <h1 className={styles.title}>Volunteer List</h1>
+      <VolunteerRow />
+    </div>    
+  )
+}
 
 export default VolunteerList

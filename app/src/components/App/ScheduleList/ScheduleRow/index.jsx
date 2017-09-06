@@ -1,24 +1,26 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
-import './style.css'
+import styles from './style.css'
 
-const ScheduleRow = () => (
-  <div className='scheduleRow' id='scheduleRow'>
-    <Table striped condensed hover>
-      <thead>
-        <tr>
-          <th>Volunteer</th>
-          <th>Task</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>James Cameron</td>
-          <td>Photographer</td>
-        </tr>
-      </tbody>
-    </Table> 
-  </div>    
-)
+const ScheduleRow = () => {
+  return (
+    <div id='scheduleRow' className={styles.scheduleRow}>
+      <Table striped condensed hover>
+        <thead>
+          <tr>
+            <th>Volunteer</th>
+            <th>Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>James Cameron</td>
+            <td>Photographer</td>
+          </tr>
+        </tbody>
+      </Table> 
+    </div>    
+  )
+}
 
 export default ScheduleRow
