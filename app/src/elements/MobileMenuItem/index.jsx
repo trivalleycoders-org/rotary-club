@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './style.css'
+import { Link } from 'react-router-dom'
 
 const MobileMenuItem = (props) => {
   return (
-    <a href={props.href} key={props.label} className={styles.menuItem}>{props.label}</a>
+    <Link to={props.to} key={props.label} className={styles.menuItem}>{props.label}</Link>
   )
 }
 

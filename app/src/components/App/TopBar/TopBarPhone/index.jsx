@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import styles from './style.css'
-import iHamburger from './hamburger.png'
 import MobileMenuItem from '../../../../elements/MobileMenuItem'
 
 class TopBarPhone extends Component {
@@ -31,7 +30,7 @@ class TopBarPhone extends Component {
     const renderMenuItems = this.props.menuItems.map((m) => (
       <MobileMenuItem
         key={m.label}
-        href={m.href}
+        to={m.to}
         label={m.label} />
     ))
 

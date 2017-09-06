@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from './style.css'
 import classNames from 'classnames'
+import { Link } from 'react-router-dom'
 
 const TopBarDesktop = (props) => {
 
@@ -14,9 +15,9 @@ const TopBarDesktop = (props) => {
     [styles.tvcLogo]: true,
     [styles.imgResponsive]: true,
   })
-  
+
   const renderMenuItems = props.menuItems.map((m) => (
-    <a href={m.href} key={m.label} className={styles.desktopMenuItem}>{m.label}</a>
+    <Link to={m.to} key={m.label} className={styles.desktopMenuItem}>{m.label}</Link>
   ))
 
   return (

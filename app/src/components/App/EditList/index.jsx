@@ -1,9 +1,9 @@
 import React from 'react'
 import EditRow from './EditRow'
 import { FormControl, Button } from 'react-bootstrap'
-import styles from './style.css' 
+import styles from './style.css'
 
-{/* save button should bring back ScheduleList component */}
+/* save button should bring back ScheduleList component */
 
 const EditList = () => {
   return (
@@ -17,7 +17,7 @@ const EditList = () => {
         </FormControl>
       </form>
       <EditRow />
-    </div>   
+    </div>
   )
 }
 

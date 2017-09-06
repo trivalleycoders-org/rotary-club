@@ -11,19 +11,19 @@ export const brand = {
 export const menuItems = [
   {
     label: 'Schedule',
-    href: '#schedule'
+    to: '/schedule'
   },
   {
     label: 'Members',
-    href: '#members',
+    to: '/members',
   },
   {
     label: 'Log In',
-    href: '#logIn',
+    to: '/login',
   },
   {
     label: 'Log Out',
-    href: '#logOut',
+    to: '/logout',
   }
 ]
 
