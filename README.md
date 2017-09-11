@@ -9,3 +9,6 @@
 # Project structure
 - /app - the application code
 - /doc - documentation
+
+
+![Image of Yaktocat](https://github.com/trivalleycoders-org/rotary-club/blob/master/doc/rotary-overview.png)
