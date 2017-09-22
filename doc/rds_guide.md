@@ -1,6 +1,6 @@
 # Adding a Database to Elastic Beanstalk with RDS
 
-This guide will show you how to connect a database from AWS RDS to your AWS Elastic Beanstalk application. It will start with creating a Node application in Elastic Beanstalk.
+This guide will show you how to create a database from AWS RDS and connect it to your AWS Elastic Beanstalk application. It will start with creating a Node application in Elastic Beanstalk.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Log in to your AWS console, go to services, and select Elastic Beanstalk. Click 
 
 ![create_app](rdstut_step1.png)
 
-After creating the app, select it if it isn't already. Click on the "Actions" drop-down in the top right and select "Create environment". For our purposes we will choose "Web server environment."
+Click on the "Actions" drop-down in the top right and select "Create environment". For our purposes we will choose "Web server environment."
 
 ![choose_environment](rdstut_step2.png)
 
@@ -33,7 +33,7 @@ While in the server environment, select "Configuration" in the top left. Go to t
 
 Configure the database. This project will be using mysql. The micro level instance class is recommended since it is free tier. We should use the single availability zone option for the purposes of the project.
 
-You should keep track of the master username and master password you set here, although you can respectively look up and change them later.
+You should keep track of the master username and master password you set here, although later you can look up and change them, respectively.
 
 ![configure_rds](rdstut_step5.png)
 
@@ -49,8 +49,7 @@ Select RDS in the services menu. Select the instance you just created and click 
 
 Now go the the "Inbound" tab and click "Edit." There is already a rule that lets the Express server access the database. Add a new rule that has the same options, except for the "Source" option.
 
-Here we put "Anywhere" so any IP can connect to the database. This is so any member of the team can connect to the database. However, they will still need to know the username and password to
-be able to edit it.
+For the "Source" option we use "Anywhere" so any IP can connect to the database. This is so all team members have access during development. However, they will still need to know the username and password to be able to edit the database.
 
 In production, it would be best to only allow the IP address of the client to connect to the database.
 
@@ -62,6 +61,6 @@ Now that the RDS database has been set up. You can connect to it through your pr
 
 ![rds_endpoint](rdstut_step8.png)
 
-The username is shown in the same tab. If you forget the password, you can reset it going to the "Instance Actions" drop-down and selecting "Modify". From there, you can change the password along with many other things. But please notify team members of any changes you make here!
+The username is shown in the same tab. If you forget the password, you can reset it by going to the "Instance Actions" drop-down and selecting "Modify". From there, you can change the password along with many other things. But please notify team members of any changes you make!
 
 ![rds_modify](rdstut_step9.png)
