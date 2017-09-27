@@ -1,3 +1,5 @@
+DELETE FROM `members`;
+
 INSERT INTO `members` (`member_id`, `first_name`, `last_name`, `email`, `exempt`, `comment`, `phone_number`) 
 VALUES 
   (NULL, 'Laura', 'Silvey', 'laura@email.com', NULL, NULL, '222-222-2221'), 
