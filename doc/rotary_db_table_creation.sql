@@ -15,9 +15,7 @@ CREATE TABLE `Exclusion` (
   `role_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`exclusion_id`),
   KEY `member_id_idx` (`member_id`),
-  KEY `exclusion_role_id_idx` (`role_id`),
-  CONSTRAINT `exclusion_member_id` FOREIGN KEY (`member_id`) REFERENCES `Member` (`member_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `exclusion_role_id` FOREIGN KEY (`role_id`) REFERENCES `Role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `exclusion_role_id_idx` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
@@ -33,9 +31,7 @@ CREATE TABLE `History` (
   `role_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`history_id`),
   KEY `member_id_idx` (`member_id`),
-  KEY `role_id_idx` (`role_id`),
-  CONSTRAINT `history_member_id` FOREIGN KEY (`member_id`) REFERENCES `Member` (`member_id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `history_role_id` FOREIGN KEY (`role_id`) REFERENCES `Role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `role_id_idx` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
