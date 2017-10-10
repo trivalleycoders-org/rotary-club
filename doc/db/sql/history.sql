@@ -1,1 +1,1 @@
-select * from history
+select * from history;
