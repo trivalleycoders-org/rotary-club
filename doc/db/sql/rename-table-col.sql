@@ -1,0 +1,1 @@
+ALTER TABLE `roles` CHANGE COLUMN `title` `role_name` VARCHAR(255) NOT NULL;
