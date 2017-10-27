@@ -7,6 +7,7 @@ CREATE TABLE `members` (
   `exempt` tinyint(4) DEFAULT NULL,
   `comment` varchar(1024) DEFAULT NULL,
   `phone_number` varchar(45) DEFAULT NULL,
+  `active` tinyint(3) UNSIGNED NOT NULL DEFAULT '1'
   PRIMARY KEY (`member_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
